@@ -1,0 +1,187 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size: 62.5%;
+     overflow-x: hidden;
+}
+body {
+     overflow-x: hidden;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     padding: 20px;
+     color: white;
+     font-size: 2rem;
+     background-color:rgba(91, 109, 128, 1);
+     background-size: cover;
+}
+
+header img {
+     width: 20%;
+}
+
+
+
+i {
+     font-size: 3rem;
+}
+
+main {
+     background-color: rgba(91, 109, 128, 1);
+     /* height: 500px; */
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+}
+header ul{
+     margin: 0;
+     display: flex;
+     justify-content: space-between;
+     list-style: none;
+}
+
+#links {
+     display: flex;
+     flex-direction: row;
+}
+
+#links li {
+     margin:0 15px;
+}
+
+
+.foldSection {
+     text-align: center;
+     color: white;
+     font-size: 3rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+}
+
+.foldSection span {
+     margin: 30px 0;
+}
+
+.foldSection i {
+     margin: 0 10px;
+}
+
+.why {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     font-size: 3rem;
+     margin: 100px 0;
+}
+
+.why p {
+     padding: 0 450px;
+}
+
+.box {
+     height: 150px;
+     width: 250px;
+     background-color: rgba(91, 109, 128, 1);
+}
+
+.visit {
+     display: flex;
+     justify-content: space-evenly;
+     text-align: center;
+     font-size: 2rem;
+     background-color: rgba(214,219,222,1);
+}
+
+.visit p, .volunteer p{
+     font-size: 1.6rem;
+     padding: 0 250px;
+}
+
+.visit span, .volunteer span  {
+     border: 1px solid black;
+     padding: 20px;
+}
+.col {
+     margin: 100px 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+
+.volunteer {
+     padding: 50px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: 2rem;
+}
+
+.volunteer p {
+     font-size: 1.9rem;
+     padding: 0 550px;
+}
+
+/* footer {
+     background-color: rgba(22, 30, 28, 1);
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+
+}
+
+footer ul {
+     padding: 20px 0;
+}
+
+.media {
+
+} */
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#logo {
+     display: flex;
+     justify-content: center;
+}
+
+.quote {
+     color: rgb(36, 42, 44);
+     font-size: 1.7rem;
+}
+
+/******************************************
+/*responsiveness
+/*******************************************/
