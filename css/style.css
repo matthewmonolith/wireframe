@@ -99,13 +99,13 @@ header ul{
      flex-direction: column;
      align-items: center;
      text-align: center;
-     font-size: 3rem;
+     font-size: 2.5rem;
      margin: 100px 0;
-}
-
-.why p {
-     padding: 0 450px;
-}
+ }
+ 
+ .why p {
+     padding: 0 20px;
+ }
 
 .box {
      height: 150px;
@@ -115,21 +115,24 @@ header ul{
 
 .visit {
      display: flex;
-     justify-content: space-evenly;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
      text-align: center;
      font-size: 2rem;
-     background-color: rgba(214,219,222,1);
-}
-
-.visit p, .volunteer p{
-     font-size: 1.6rem;
-     padding: 0 250px;
-}
-
-.visit span, .volunteer span  {
-     border: 1px solid black;
-     padding: 20px;
-}
+     background-color: rgba(214, 219, 222, 1);
+ }
+ 
+ .visit .col {
+     flex: 0 0 50%;
+     padding: 0 20px;
+     margin: 20px 0;
+ }
+ 
+ .visit p {
+     padding: 0 20px;
+ }
+ 
 .col {
      margin: 100px 0;
      display: flex;
@@ -137,6 +140,10 @@ header ul{
      align-items: center;
 }
 
+.col span {
+     border: 1px solid black;
+     padding: 5px;
+}
 
 .volunteer {
      padding: 50px;
@@ -146,11 +153,16 @@ header ul{
      align-items: center;
      justify-content: center;
      font-size: 2rem;
-}
-
-.volunteer p {
+ }
+ 
+ .volunteer p {
      font-size: 1.9rem;
      padding: 0 550px;
+ }
+
+.volunteer span {
+     border: 1px solid black;
+     padding: 5px;
 }
 
 /* footer {
@@ -185,3 +197,79 @@ footer ul {
 /******************************************
 /*responsiveness
 /*******************************************/
+
+@media screen and (max-width: 1628px) {
+     .volunteer p {
+         padding: 0 20px;
+     }
+ }
+ 
+
+
+
+@media screen and (max-width: 768px) {
+     html {
+         font-size: 50%;
+     }
+
+     header {
+         flex-direction: column;
+         padding: 10px;
+         text-align: center;
+     }
+
+     header img {
+         width: 30%;
+         margin-bottom: 10px;
+     }
+
+     #links {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-bottom: 10px;
+     }
+
+     #links li {
+         margin: 5px 0;
+     }
+
+     header button {
+         display: block;
+         margin-top: 10px;
+     }
+
+     .foldSection {
+         font-size: 2rem;
+     }
+
+     .why {
+         font-size: 2.5rem;
+     }
+
+     .visit {
+          flex-direction: column;
+      }
+      
+      .visit .col {
+          flex: 0 0 100%;
+          order: 1;
+      }
+      
+      .visit .col:first-child {
+          order: 2;
+      }
+      
+      .volunteer p {
+          padding: 0 20px;
+      }
+
+     .col {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .col img {
+         width: 80%;
+     }
+ }
